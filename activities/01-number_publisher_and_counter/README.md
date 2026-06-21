@@ -19,12 +19,10 @@ Create two ROS 2 nodes that communicate through topics:
 
 ### Terminal Output
 
-> Add screenshot here
 
 ![Execution Screenshot](screenshots/execution_output.png)
 
 ### rqt_graph
 
-> Add screenshot here
 
 ![rqt\_graph Screenshot](screenshots/graph_output.png)
