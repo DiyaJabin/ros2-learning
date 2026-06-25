@@ -28,7 +28,8 @@ python/add_two_ints_client_no_oop.py
 ### C++
 
 ```text
-Implementation coming soon
+cpp/add_two_ints_server.cpp
+cpp/add_two_ints_client.cpp
 ```
 
 ## Service Used
@@ -75,7 +76,7 @@ int64 sum
 
 ### C++ Service Server and Client
 
-*Implementation will be added in a future update.*
+![CPP Service Communication](screenshots/cpp_client_server.png)
 
 ## Key Takeaways
 
@@ -87,8 +88,6 @@ int64 sum
 
 ## Next Steps
 
-* C++ Service Client
-* C++ Service Server
 * Custom Service Definitions
 * Parameters
 * Launch Files

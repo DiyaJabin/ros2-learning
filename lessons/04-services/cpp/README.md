@@ -1,1 +1,0 @@
-C++ service client and server implementations will be added in a future update.
