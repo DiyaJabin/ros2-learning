@@ -77,7 +77,7 @@ Number Publisher
 
 The complete demonstration video is available here:
 
-📹 `screenshots_videos/activity_demo.mp4`
+[🎥 Watch Activity Demo](screenshots_videos/activity_demo.mp4)
 
 ---
 
