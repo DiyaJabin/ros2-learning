@@ -2,80 +2,101 @@
 
 ## Objective
 
-Learn how to create and use a custom ROS 2 message by publishing hardware status information from both Python and C++ nodes.
+Learn how to create and use custom ROS 2 interfaces by implementing custom message and service definitions in both Python and C++.
 
 ---
 
-## Concepts Covered
+# Concepts Covered
 
-- Custom ROS 2 message interfaces
-- Interface packages
+## Custom Messages (.msg)
+
+- Creating custom message definitions
 - Publishing custom messages
-- Python (`rclpy`)
-- C++ (`rclcpp`)
-- Topic introspection using ROS 2 CLI
+- Using custom messages in Python (`rclpy`)
+- Using custom messages in C++ (`rclcpp`)
+- Inspecting custom topics using ROS 2 CLI
 
----
-
-## Custom Message
-
-`HardwareStatus.msg`
+### Custom Message
 
 ```text
+HardwareStatus.msg
+
 float64 temperature
 bool are_motors_ready
 string debug_message
 ```
 
-This custom message represents the status of a robot's hardware.
-
 ---
 
-## Project Structure
+## Custom Services (.srv)
+
+- Creating custom service definitions
+- Implementing custom service servers
+- Processing service requests
+- Returning computed responses
+- Testing custom services using ROS 2 CLI
+
+### Custom Service
 
 ```text
-python/
-└── hardware_status_publisher.py
+ComputeRectangleArea.srv
 
-cpp/
-└── hardware_status_publisher.cpp
+float64 length
+float64 width
+---
+float64 area
 ```
 
 ---
 
-## Demonstration
+# Folder Structure
+
+```text
+messages/
+├── msg/
+├── python/
+├── cpp/
+└── screenshots/
+
+services/
+├── srv/
+├── python/
+├── cpp/
+└── screenshots/
+```
+
+---
+
+# Demonstration
+
+## Custom Message
 
 ### Python Publisher
 
-![Python Demo](screenshots/python_demo.png)
-
----
+![Python Publisher](messages/screenshots/python_demo.png)
 
 ### C++ Publisher
 
-![C++ Demo](screenshots/cpp_demo.png)
+![C++ Publisher](messages/screenshots/cpp_demo.png)
 
 ---
 
-## Commands Used
+## Custom Service
 
-```bash
-ros2 run <package_name> hardware_status_publisher
-```
+### Python Server (ROS 2 CLI)
 
-```bash
-ros2 topic list
-```
+![Python Service](services/screenshots/python_cli_demo.png)
 
-```bash
-ros2 topic echo /hardware_status
-```
+### C++ Server (ROS 2 CLI)
+
+![C++ Service](services/screenshots/cpp_cli_demo.png)
 
 ---
 
-## Key Takeaways
+# Key Takeaways
 
-- ROS 2 allows developers to define custom message types.
-- Custom interfaces enable structured communication between robot components.
-- The same interface can be shared across both Python and C++ nodes.
-- ROS 2 CLI tools work seamlessly with custom message types.
+- Created custom ROS 2 message types.
+- Created custom ROS 2 service definitions.
+- Implemented service servers in Python and C++.
+- Shared interfaces between Python and C++ nodes.
+- Used ROS 2 CLI tools to verify custom interfaces and services.
