@@ -1,0 +1,1 @@
+uint8 led_status[] #Array showing status of LEDS, 0 for off and 1 for on 
